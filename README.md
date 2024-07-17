@@ -2,8 +2,7 @@
 
 Intune One Data Collector (ODC) is a support script to enable the collection of logs, Registry data, and command output from Intune Windows 10 and Windows 11 clients.  IntuneODCStandAlone.ps1 ingests the Intune.xml file to automate data collection.  Once the data is gathered, the script will open an Explorer window in the folder where the ODC contents are located. The default file name is COMPUTERNAME_CollectedData.zip (where COMPUTERNAME is the name of the Windows device).
  
- 
-To run this tool, open an elevated PowerShell window (right-click, "Run as administrator..."), create a temporary folder, then run these three commands:
+To run this tool, open an elevated PowerShell window (right-click, "Run as administrator..."), create a temporary folder ( ODC in this example ) , browse to this folder and  then run these three commands:
 
          wget https://aka.ms/intunePS1  -outfile IntuneODCStandAlone.ps1
          wget https://aka.ms/intuneXML  -outfile Intune.xml
